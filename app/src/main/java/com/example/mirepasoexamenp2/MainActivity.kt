@@ -14,6 +14,11 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.example.mirepasoexamenp2.navegacion.NavegacionView
 import com.example.mirepasoexamenp2.ui.theme.MirepasoexamenP2Theme
 
+
+
+
+
+//* hola profe, para que recuerde que le dije que lo hice con el mismo donde me puse a ver su video por si se saca de onda de porque se ve diferente o raro es porque use el mismo pa batallar menos
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

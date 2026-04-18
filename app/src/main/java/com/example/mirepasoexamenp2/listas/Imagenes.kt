@@ -41,7 +41,7 @@ fun ImagenPreview(){
 fun ImagenView(navController: NavHostController) {
 
     var imagenId by remember {
-        mutableStateOf(R.drawable.gato)
+        mutableStateOf(R.drawable.libro)
     }
 
     Box(modifier = Modifier.fillMaxSize()
@@ -58,11 +58,11 @@ fun ImagenView(navController: NavHostController) {
         )
 
         Text(
-            text = "Un gato",
-            color = Color.Yellow,
+            text = "Abrir",
+            color = Color.White,
             fontSize = 40.sp,
             modifier = Modifier
-                .align(Alignment.Center)
+                .align(Alignment.BottomCenter)
                 .background(Color.Black.copy(alpha = 0.6f))
                 .padding(16.dp)
         )
@@ -74,7 +74,7 @@ fun ImagenView(navController: NavHostController) {
         ) {
             IconButton(
                 onClick = {
-                    imagenId = if (imagenId == R.drawable.gato) {
+                    imagenId = if (imagenId == R.drawable.libro) {
                         R.drawable.perro
                     } else {
                         R.drawable.gato

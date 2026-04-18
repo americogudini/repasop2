@@ -23,6 +23,7 @@ fun NavegacionView() {
     NavHost(
         navController = navController,
         startDestination = BienvenidoRuta
+
     ) {
         composable<BienvenidoRuta> {
             ImagenView(navController)

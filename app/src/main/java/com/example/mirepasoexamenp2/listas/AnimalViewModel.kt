@@ -8,13 +8,13 @@ class AnimalViewModel: ViewModel() {
     var animales: List<AnimalModelo> = _animales
 
     init {
-        _animales.add(AnimalModelo(1, "Gato", R.drawable.gato,"Minino",2))
-        _animales.add(AnimalModelo(2, "Perro", R.drawable.perro,"Mac",6))
-        _animales.add(AnimalModelo(3, "Zorro", R.drawable.zorro,"Ito",4))
-        _animales.add(AnimalModelo(4, "Michi", R.drawable.michi,"Mi",1))
-        _animales.add(AnimalModelo(5, "Mapache", R.drawable.mapache,"ta",4))
-        _animales.add(AnimalModelo(6, "Perezoso", R.drawable.perezoso,"pi",4))
-        _animales.add(AnimalModelo(7, "Panda", R.drawable.panda,"po",4))
+        _animales.add(AnimalModelo(1, "Trueno Temblor", R.drawable.trueno01))
+        _animales.add(AnimalModelo(2, "Cortaleña", R.drawable.cortalena01))
+        _animales.add(AnimalModelo(3, "Caldero", R.drawable.caldero01))
+        _animales.add(AnimalModelo(4, "Metamórfara", R.drawable.metamorfala01,))
+        _animales.add(AnimalModelo(5, "Muerte Susurrante", R.drawable.muerte01))
+        _animales.add(AnimalModelo(6, "Furia Nocturna", R.drawable.furia01))
+
 
 
 

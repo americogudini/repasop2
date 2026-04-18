@@ -33,7 +33,7 @@ import com.example.mirepasoexamenp2.navegacion.ListadoRuta
 @Preview(showBackground = true)
 @Composable
 fun AnimalPreview() {
-    val animal = AnimalModelo(id = 1, tipo = "Jaguar", imagen = R.drawable.jaguar, nombre = "Leo", edad = 23)
+    val animal = AnimalModelo(id = 1, tipo = "Trueno Tambor", imagen = R.drawable.trueno02)
     AnimalView(animal, rememberNavController())
 }
 
@@ -48,13 +48,13 @@ fun AnimalView(animal: AnimalModelo, navegador: NavHostController) {
     Card(
         modifier = Modifier
             .fillMaxWidth()
-            .padding(8.dp)
+            .padding(4.dp)
     ) {
 
         Row(modifier = Modifier.padding(8.dp)) {
 
             Image(
-                modifier = Modifier.height(100.dp),
+                modifier = Modifier.height(200.dp),
                 painter = painterResource(animal.imagen),
                 contentDescription = "imagen del animal",
                 contentScale = ContentScale.FillHeight
@@ -67,15 +67,17 @@ fun AnimalView(animal: AnimalModelo, navegador: NavHostController) {
                 verticalArrangement = Arrangement.SpaceBetween
             ) {
 
-                Text("Tipo: ${animal.tipo}", fontSize = 19.sp)
-                Text("Nombre: ${animal.nombre} ", color = Color.Blue, fontSize = 19.sp)
+                Text(" ${animal.tipo}", fontSize = 19.sp)
+
+
+
 
                 Row(
                     modifier = Modifier.fillMaxWidth(),
                     verticalAlignment = Alignment.CenterVertically
                 ) {
 
-                    Text("EDAD: ${animal.edad} Años")
+
 
                     Box(
                         modifier = Modifier.fillMaxWidth(),

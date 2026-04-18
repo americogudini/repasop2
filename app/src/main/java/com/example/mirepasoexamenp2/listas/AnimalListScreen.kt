@@ -20,11 +20,11 @@ fun AnimalListScreen(navController: NavHostController) {
     LazyColumn(modifier = Modifier.fillMaxSize()) {
         item{
             Row() {
-                Text("Mis Animales")
+                Text("Elige un Dragón")
                 Button(onClick ={
 navController.popBackStack()
                 } ) {
-Text("Regresar")
+Text("Cerrar Libro")
                 }
             }
         }
@@ -32,7 +32,7 @@ Text("Regresar")
         AnimalView(it, navController)
     }
 item{
-    Text("Desarrollado por americo")
+    Text("Desarrollado por AMERICO GUDINI GRANADOS,el mero mero ")
 }
     }
 }
